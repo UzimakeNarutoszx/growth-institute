@@ -1,0 +1,35 @@
+{
+  "bsonType": "object",
+  "required": ["phone"],
+  "permission": {
+    "read": "doc._id == auth.uid",
+    "create": true,
+    "update": "doc._id == auth.uid",
+    "delete": false
+  },
+  "properties": {
+    "_id": { "description": "用户ID" },
+    "phone": { "bsonType": "string", "description": "手机号" },
+    "nickname": { "bsonType": "string", "description": "昵称" },
+    "avatar": { "bsonType": "string", "description": "头像URL" },
+    "child": {
+      "bsonType": "object",
+      "description": "孩子信息",
+      "properties": {
+        "name": { "bsonType": "string" },
+        "birthday": { "bsonType": "string" },
+        "gender": { "bsonType": "string", "enum": ["male", "female"] },
+        "height": { "bsonType": "double" },
+        "weight": { "bsonType": "double" },
+        "bone_age": { "bsonType": "double" },
+        "father_height": { "bsonType": "double" },
+        "mother_height": { "bsonType": "double" },
+        "expected_height": { "bsonType": "double" },
+        "allergies": { "bsonType": "array" }
+      }
+    },
+    "is_vip": { "bsonType": "bool", "defaultValue": false },
+    "token": { "bsonType": "string" },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "date", "height", "weight"],
+  "permission": {
+    "read": "doc.user_id == auth.uid",
+    "create": true,
+    "update": "doc.user_id == auth.uid",
+    "delete": "doc.user_id == auth.uid"
+  },
+  "properties": {
+    "_id": { "description": "记录ID" },
+    "user_id": { "bsonType": "string" },
+    "date": { "bsonType": "string", "description": "记录日期 YYYY-MM-DD" },
+    "height": { "bsonType": "double", "description": "身高cm" },
+    "weight": { "bsonType": "double", "description": "体重kg" },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}

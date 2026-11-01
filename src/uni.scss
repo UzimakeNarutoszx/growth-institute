@@ -1,0 +1,26 @@
+/**
+ * uni.scss - uni-app 全局样式变量
+ * 这些变量可以在所有 Vue 文件的 <style> 中直接使用
+ */
+
+/* 主题色 */
+$uni-primary: #4A9EFF;
+$uni-secondary: #36C2AA;
+$uni-bg-color: #F8FAFF;
+$uni-text-color: #333333;
+$uni-text-color-grey: #999999;
+
+/* 间距 */
+$uni-spacing-lg: 32rpx;
+$uni-spacing-md: 24rpx;
+$uni-spacing-sm: 16rpx;
+
+/* 圆角 */
+$uni-border-radius-lg: 16rpx;
+$uni-border-radius-sm: 8rpx;
+
+/* 字体大小 */
+$uni-font-size-title: 34rpx;
+$uni-font-size-subtitle: 28rpx;
+$uni-font-size-base: 26rpx;
+$uni-font-size-sm: 24rpx;

@@ -1,0 +1,200 @@
+{
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^Nav(.*)": "@/components/Nav$1.vue",
+      "^Section(.*)": "@/components/Section$1.vue",
+      "^Icon(.*)": "@/components/Icon$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/homePage/index",
+      "style": {
+        "navigationBarTitleText": "生长研究院",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/assessmentHomePage/index",
+      "style": {
+        "navigationBarTitleText": "科学测评",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/growthRecordPage/index",
+      "style": {
+        "navigationBarTitleText": "成长记录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/profilePage/index",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/questionPage/index",
+      "style": {
+        "navigationBarTitleText": "测评题目",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/reportPage/index",
+      "style": {
+        "navigationBarTitleText": "生长评估报告",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/nutritionPage/index",
+      "style": {
+        "navigationBarTitleText": "营养方案",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/exercisePage/index",
+      "style": {
+        "navigationBarTitleText": "运动计划",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/expertPage/index",
+      "style": {
+        "navigationBarTitleText": "豆包AI答疑",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/communityPage/index",
+      "style": {
+        "navigationBarTitleText": "成长社区",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/loadingPage/index",
+      "style": {
+        "navigationBarTitleText": "评估计算中",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/articlePage/index",
+      "style": {
+        "navigationBarTitleText": "文章详情",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/loginPage/index",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/myAssessmentsPage/index",
+      "style": {
+        "navigationBarTitleText": "成长档案",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/myFavoritesPage/index",
+      "style": {
+        "navigationBarTitleText": "收藏文章",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/myChatHistoryPage/index",
+      "style": {
+        "navigationBarTitleText": "问答记录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/myOrdersPage/index",
+      "style": {
+        "navigationBarTitleText": "我的订单",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/personalInfoPage/index",
+      "style": {
+        "navigationBarTitleText": "个人信息",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/accountSecurityPage/index",
+      "style": {
+        "navigationBarTitleText": "账号与安全",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/aboutPage/index",
+      "style": {
+        "navigationBarTitleText": "关于生长研究院",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/articlesPage/index",
+      "style": {
+        "navigationBarTitleText": "文章推荐",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "生长研究院",
+    "navigationBarBackgroundColor": "#F8FAFF",
+    "backgroundColor": "#F8FAFF",
+    "backgroundTextStyle": "dark",
+    "rpxCalcMaxDeviceWidth": 750,
+    "rpxCalcBaseDeviceWidth": 375
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#4A9EFF",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/homePage/index",
+        "text": "首页",
+        "iconPath": "static/bottom/home.png",
+        "selectedIconPath": "static/bottom/home_colored.png"
+      },
+      {
+        "pagePath": "pages/assessmentHomePage/index",
+        "text": "测评",
+        "iconPath": "static/bottom/assessment.png",
+        "selectedIconPath": "static/bottom/assessment_colored.png"
+      },
+      {
+        "pagePath": "pages/growthRecordPage/index",
+        "text": "成长",
+        "iconPath": "static/bottom/growth.png",
+        "selectedIconPath": "static/bottom/growth_colored.png"
+      },
+      {
+        "pagePath": "pages/profilePage/index",
+        "text": "我的",
+        "iconPath": "static/bottom/profile.png",
+        "selectedIconPath": "static/bottom/profile_colored.png"
+      }
+    ]
+  }
+}

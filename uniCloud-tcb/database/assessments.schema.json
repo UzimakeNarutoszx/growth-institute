@@ -1,0 +1,32 @@
+{
+  "bsonType": "object",
+  "required": ["user_id"],
+  "permission": {
+    "read": "doc.user_id == auth.uid",
+    "create": true,
+    "update": "doc.user_id == auth.uid",
+    "delete": false
+  },
+  "properties": {
+    "_id": { "description": "测评记录ID" },
+    "user_id": { "bsonType": "string", "description": "用户ID" },
+    "status": { "bsonType": "string", "enum": ["in_progress", "completed"] },
+    "answers": { "bsonType": "object", "description": "答案 T001-T015" },
+    "result": {
+      "bsonType": "object",
+      "description": "计算结果",
+      "properties": {
+        "score": { "bsonType": "int" },
+        "bmi": { "bsonType": "double" },
+        "bmi_level": { "bsonType": "string" },
+        "target_height": { "bsonType": "double" },
+        "growth_rate": { "bsonType": "string" },
+        "summary": { "bsonType": "string" },
+        "supplements": { "bsonType": "array" },
+        "combos": { "bsonType": "array" },
+        "advice": { "bsonType": "object" }
+      }
+    },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}

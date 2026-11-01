@@ -1,0 +1,7 @@
+{
+  "name": "ai-proxy",
+  "version": "1.0.0",
+  "description": "豆包AI代理云函数，保护API Key安全",
+  "main": "index.js",
+  "dependencies": {}
+}

@@ -1,0 +1,18 @@
+{
+  "bsonType": "object",
+  "required": ["user_id", "date", "event"],
+  "permission": {
+    "read": "doc.user_id == auth.uid",
+    "create": true,
+    "update": "doc.user_id == auth.uid",
+    "delete": "doc.user_id == auth.uid"
+  },
+  "properties": {
+    "_id": { "description": "里程碑ID" },
+    "user_id": { "bsonType": "string" },
+    "date": { "bsonType": "string" },
+    "event": { "bsonType": "string" },
+    "icon": { "bsonType": "string" },
+    "created_at": { "bsonType": "timestamp" }
+  }
+}
